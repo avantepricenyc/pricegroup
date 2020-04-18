@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta property="og:title" content="Price Group"/>
+    <meta property="og:url" content=""/>
+    <meta property="og:image" content="" />
+    <meta property="og:type" content="website"/>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+    <script src="/js/front.js"></script>
+    <link rel="icon" href="">
+    <title>Price Group</title>
+  </head>
+  <body>
+
+  <!---  Navigation Section -->
+
+      <nav id="navbar">
+        <div style="position:fixed;" class="nav">
+          <ul>
+          <!--  <li><a href="#">Blog</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#AboutMe">About</a></li>
+            <li><a href="#">Home</a></li> -->
+            <li><button onclick="document.getElementById('id01').style.display='block'">Member Login</button></li>
+          </ul>
+        <p class="hometitle">PRICE GROUP</p>
+       </div>
+      </nav>
+
+  <!---  Main Section -->
+  <!---  Add to form for Hubspot Integration: action="https://api.hubapi.com/contacts/v1/contact/?hapikey=96ed62bd-be81-43d7-9da5-457dbef1817c" method="POST"-->
+
+      <section id="showcase">
+        <div class="showcasecontainer">
+
+          <h2 id="demo"></h2>
+          <br>
+          <h3>Enter your email and we will reach out ASAP.</h3>
+          <form action="https://api.hubapi.com/contacts/v1/contact/?hapikey=96ed62bd-be81-43d7-9da5-457dbef1817c" method="POST">
+            <input type="email" id="email" name="email" placeholder="your email."><input type="submit" id="submit" name="submit" value="Join us.">
+          </form>
+         </div>
+
+         <div id="id01" class="modal">
+          <span onclick="document.getElementById('id01').style.display='none'"
+            class="close" title="Close Modal">&times;</span>
+
+            <form class="modal-content animate" action="/action_page.php">
+
+              <div class="container">
+                  <label for="uname"><b>Username</b></label>
+                  <input type="text" placeholder="Enter Username" name="uname" required>
+                  <br>
+                  <label for="psw"><b>Password</b></label>
+                  <input type="password" placeholder="Enter Password" name="psw" required>
+                  <br>
+                  <button type="submit">Login</button>
+                  <label>
+                    <input type="checkbox" checked="checked" name="remember"> Remember me
+                  </label>
+              </div>
+
+              <div class="container" style="background-color:#f1f1f1; border-radius: 4px;">
+                <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+              </div>
+          </form>
+        </div>
+
+       </section>
+
+
+
+
+
+
+
+
+
+  </body>
+</html>
