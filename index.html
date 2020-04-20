@@ -11,6 +11,7 @@
     <script src="/js/front.js"></script>
     <link rel="icon" href="">
     <title>Price Group</title>
+    <script src="https://code.jquery.com/jquery-3.5.0.js" integrity="sha256-r/AaFHrszJtwpe+tHyNi/XCfMxYpbsRg2Uqn0x3s2zc=" crossorigin="anonymous"></script>
   </head>
   <body>
 
@@ -38,7 +39,7 @@
           <h2 id="demo"></h2>
           <br>
           <h3>Enter your email and we will reach out ASAP.</h3>
-          <form action="https://api.hubapi.com/contacts/v1/contact/?hapikey=96ed62bd-be81-43d7-9da5-457dbef1817c" method="POST">
+          <form action="/newsletter" method="POST">
             <input type="email" id="email" name="email" placeholder="your email."><input type="submit" id="submit" name="submit" value="Join us.">
           </form>
          </div>
